@@ -1,0 +1,32 @@
+.containerlogin {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+}
+
+.containerLogin .logo {
+    height: 350px;
+    width: 350px;
+    grid-area: logo;
+}
+
+#user {
+    grid-area: user;
+    width: 50%;
+}
+
+#password {
+    grid-area: password;
+}
+
+#submit {
+    grid-area: submit;
+}
+
+#loginDetails {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 55%;
+}
