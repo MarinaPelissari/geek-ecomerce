@@ -37,7 +37,8 @@ header {
 
 @media screen and (max-width: 500px) {
     header {
-        display: inline-block;
+        display: block;
+        justify-content: start;
     }
     #logo {
         width: 60px;
