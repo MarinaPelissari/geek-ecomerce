@@ -1,11 +1,13 @@
-header div, header nav, #searchbar {
+header div,
+header nav,
+#searchbar {
     min-width: max-content;
 }
 
 header {
     display: inline-flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     width: 100%;
 }
 
@@ -14,7 +16,7 @@ header {
 }
 
 #logo {
-    width: 120px; 
+    width: 120px;
     height: 120px;
 }
 
@@ -37,17 +39,22 @@ header {
     header {
         display: inline-block;
     }
-
     #logo {
         width: 60px;
         height: 60px;
     }
-
     #storeNameContainer {
         height: 80px;
     }
-
     #storeName {
         font-size: 3.5rem;
     }
+}
+
+.error {
+    color: red
+}
+
+.panel {
+    margin-top: 15%
 }
