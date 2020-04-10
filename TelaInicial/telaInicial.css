@@ -37,6 +37,14 @@ header {
     justify-content: space-evenly;
 }
 
+.btn-link, #storeName {
+    color: #333333;
+}
+
+.btn-link:hover {
+    color: #7c7c7d;
+}
+
 @media screen and (max-width: 866px) {
     header {
         justify-content: space-evenly;
