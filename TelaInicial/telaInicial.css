@@ -25,7 +25,9 @@ header {
 }
 
 #search {
+    width: 19vw;
     max-width: 227px;
+    min-width: 72px;
 }
 
 #navbar {
@@ -35,11 +37,13 @@ header {
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 866px) {
     header {
-        display: block;
-        justify-content: start;
+        justify-content: space-evenly;
     }
+}
+
+@media screen and (max-width: 500px) {
     #logo {
         width: 60px;
         height: 60px;
@@ -49,5 +53,17 @@ header {
     }
     #storeName {
         font-size: 3.5rem;
+    }
+
+    .nav-link {
+        padding: 0 !important;
+    }
+
+    .navbar-nav {
+        margin: 0;  
+    }
+    
+    .navbar {
+        min-height: 40px;
     }
 }
