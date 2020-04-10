@@ -1,32 +1,13 @@
-.containerlogin {
-    display: flex;
-    align-items: center;
-    height: 50%;
-    width: 50%;
+.error {
+    color: red
 }
 
-.containerLogin .logo {
-    height: 350px;
-    width: 350px;
-    grid-area: logo;
+.panel {
+    margin-top: 15%
 }
 
-#user {
-    grid-area: user;
-    width: 50%;
-}
-
-#password {
-    grid-area: password;
-}
-
-#submit {
-    grid-area: submit;
-}
-
-#loginDetails {
-    display: flex;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 55%;
+@media screen and (max-width: 991px) {
+    id-ou-classe-que-vc-criar-pra-div {
+        min-width: 100vw;
+    }
 }
