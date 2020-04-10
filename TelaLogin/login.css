@@ -9,3 +9,9 @@
 #btn_save {
     min-width: 82px;
 }
+
+@media screen and (max-width: 991px) {
+    id-ou-classe-que-vc-criar-pra-div {
+        min-width: 100vw;
+    }
+}
