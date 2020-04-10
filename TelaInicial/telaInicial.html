@@ -3,85 +3,56 @@
 
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="login.css"></link>
-    <link rel="stylesheet" href="../TelaInicial/telaInicial.css"></link>
-    <link rel="stylesheet" href="telaInicial.css"></link>
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <link rel="stylesheet" href="telaInicial.css" />
 </head>
+<header>
+    <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center flex-sm-{grow|shrink}-1 ml-3">
+        <img id="logo" href="" src="../img/logo.png" />
+        <h1 id="storeName">GEEK store</h1>
+    </div>
+    <!-- <div class="searchbar align-items-center justify-content-around">
+        <input class="search_input border border-secondary rounded" type="text" name="" placeholder="Search..."
+            style="width: 250px; height: 32px;">
+        <img href="" src="../img/loupe-32px.png" />
+    </div> -->
+    <nav class="navbar">
+        <form class="form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" id="search">
+            <button class="btn my-2 my-sm-0" type="submit"><img href="" src="../img/loupe-32px.png" /></button>
+        </form>
+    </nav>
+    <div id="rightContainer" class="d-inline-flex align-items-center justify-content-around ml-3 mr-5">
+        <h4 class="px-1">Cadastre-se</h4>
+        <h4 class="px-1">|</h4>
+        <h4 class="px-1">Login</h4>
+        <img class="pl-2" href="" src="../img/cart.png" />
+    </div>
+</header>
 
 <body>
-    <div class="content">
-        <div class="div1">
-            <div id="menu">
-                <ul>
-                    <li><a href="../Camisas/camisas.html">Camisas</a></li>
-                    <li><a href="../Blusas/blusas.html">Blusas</a></li>
-                    <li><a href="../Canecas/canecas.html">Canecas</a></li>
-                    <li><a href="../Acessorios/acess.html">Acessórios</a></li>
-                </ul>
-                <form class="pesquisa">
-                    <input type="search" id="texto" placeholder="Pesquise aqui..." list="historico">
-                    <img src="../img/lupa.png" class="btn">
-                </form>
-                <datalist id="historico">
-                    <option value="Camisas"></option>
-                    <option value="Blusas"></option>
-                    <option value="Canecas"></option>
-                    <option value="Acessórios"></option>
-                    <option value="The Flash"></option>
-                    <option value="Viuva Negra"></option>
-                    <option value="Capitão America"></option>
-                    <option value="Batman"></option>
-                </datalist>
-                <div class="centerDiv">
-                    <a href="../CarrinhoCompras/carrinho.html">
-                        <ol>
-                            <li>Meu Carrinho</li><br>
-                            <li><img class="carrinho" src="../img/carrinho.png"></li>
-                        </ol>
-                    </a>
-                    <a href="../TelaLogin/login.html">
-                        <ol>
-                            <li>Login Usuário</li><br>
-                            <li><img class="entrarlogin" src="../img/login.png"></li>
-                        </ol>
-                    </a>
-                </div>
-                <div class="homeLogoDiv">
-                    <a href="../TelaInicial/telaInicial.html">
-                        <ol>
-                            <li>Home</li><br>
-                            <li><img class="homeLogo" src="../img/cap2.png" style="height: 40px; width: 40px;"></li>
-                        </ol>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-        <div class="div2">
-            <p>Login</p>
-        </div>
-        <br>
-        <div class="containerLogin">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <button type="submit" class="btn-primary" id = "submit">Submit</button>
-                <!-- <div class="form-group form-check" id = "">
-                </div> -->
-            </form>
-            </br>
-        </div>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav align-items-center" id="navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Camisetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Blusas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Acessórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Canecas</a>
+            </li>
+        </ul>
+    </nav>
 </body>
 
 </html>
