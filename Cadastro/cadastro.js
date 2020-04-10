@@ -55,7 +55,7 @@ $(document).ready(function() {
             sobrenome: "Informe seu sobrenome!",
             nasc: "Informe a data de nascimento!",
             senha: "Informe uma senha válida!",
-            senha2: "As senhas não se corresponde!",
+            senha2: "As senhas não se correspondem!",
             cpf: "Informe um CPF válido!",
             rg: "Informe um RG válido!"
 
