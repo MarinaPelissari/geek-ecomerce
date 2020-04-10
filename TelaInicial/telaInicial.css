@@ -1,3 +1,7 @@
+a:link {
+    text-decoration: none;
+}
+
 header div,
 header nav,
 #searchbar {
@@ -37,7 +41,7 @@ header {
     justify-content: space-evenly;
 }
 
-.btn-link {
+.btn-link, #storeName {
     color: #333333;
 }
 
