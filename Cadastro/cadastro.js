@@ -3,7 +3,7 @@ $(document).ready(function() {
         debug: true,
         success: "valid"
     });
-    $("#formLogin").validate({
+    $("#formCadastro").validate({
         rules: {
             email: {
                 required: true,
