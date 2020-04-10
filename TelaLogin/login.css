@@ -6,6 +6,10 @@
     margin-top: 15%
 }
 
+#btn_save {
+    min-width: 82px;
+}
+
 @media screen and (max-width: 991px) {
     .btn_save {
         min-width: 100vw;
