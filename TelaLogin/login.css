@@ -58,3 +58,7 @@ header {
 .panel {
     margin-top: 15%
 }
+
+#btn_save {
+    min-width: 82px;
+}
