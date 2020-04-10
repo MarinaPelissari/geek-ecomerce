@@ -64,26 +64,25 @@
     </nav>
     <!--Login-->
     <div class="col-md-4 col-md-offset-4">
-        <div class="panel panel-default">
-            <div class="panel-heading">Informe o Endereço de email para a recuperação d Senha</div>
+        <div class="panel panel-success">
+            <div class="panel-heading">Sucesso</div>
             <div class="panel-body">
                 <div class="container col-md-12">
-                    <form method="POST" id="formLogin" action="../EsqueciSenha/esquecisenha.html" >
+                    <form method="POST" >
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" name="email" id="email">
-                        </div>
-                        
-                        <div class="form-group col-md-4 col-md-offset-4">
-                            <button  type="submit" class="btn btn-dark btn-lg btn-block" id="btn_change">Enviar</button>
-                        </div>
+                            <label>Sua senha foi enviada para o seu endereço! </label>                 
+                        </div>                   
                     </form>  
+                    <a href="../TelaLogin/login.html">
+                        <div class="form-group col-col-md-offset-4">
+                            <button type="submit" class="btn btn-dark btn-lg btn-block" id="btn_back" >Ir para Login</button>
+                        </div>
+                    </a>  
                                                                    
                 </div>
             </div>
         </div>
     </div>
-     <script src="esquecisenha.js"></script> 
 </body>
 
 </html>
