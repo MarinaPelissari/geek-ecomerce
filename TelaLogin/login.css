@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    id-ou-classe-que-vc-criar-pra-div {
+    .btn_save {
         min-width: 100vw;
     }
 }

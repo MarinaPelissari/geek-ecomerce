@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cadastro</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
+    <link rel="stylesheet" href="cadastro.css" />
+
+
+</head>
+<header>
+    <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center flex-sm-{grow|shrink}-1 ml-3">
+        <img id="logo" href="" src="../img/logo.png" />
+        <h1 id="storeName">GEEK store</h1>
+
+    </div>
+    <!-- <div class="searchbar align-items-center justify-content-around">
+        <input class="search_input border border-secondary rounded" type="text" name="" placeholder="Search..."
+            style="width: 250px; height: 32px;">
+        <img href="" src="../img/loupe-32px.png" />
+    </div> -->
+    <nav class="navbar">
+        <form class="form-inline">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" id="search" list="historico">
+            <button class="btn my-2 my-sm-0" type="submit"><img href=""  src="../img/loupe-32px.png" /></button>
+
+            <datalist id="historico">
+                <option value="Camisas"></option>
+                <option value="Blusas"></option>
+                <option value="Canecas"></option>
+                <option value="Acessórios"></option>             
+        </form>
+    </nav>
+    <div id="rightContainer" class="d-inline-flex align-items-center justify-content-around ml-3 mr-5">
+        <h4 class="px-1">Cadastre-se</h4>
+        <h4 class="px-1">|</h4>
+        <h4 class="px-1">Login</h4>
+        <img class="pl-2" href="" src="../img/cart.png" />
+    </div>
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav align-items-center" id="navbar">
+            <li class="nav-item">
+                <a class="nav-link" href="../Camisas/camisas.html">Camisetas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Blusas/blusas.html">Blusas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Acessorios/acess.html">Acessórios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../Canecas/canecas.html">Canecas</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Login-->
+    <script src="cadastro.js"></script> 
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Cadastro</div>
+            <div class="panel-body">
+                <div class="container col-md-12">
+                    <form method="POST" id="formLogin" action="/TelaLogin/test.html" >
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Sobrenome</label>
+                            <input type="text" class="form-control" name="sobrenome" id="sobrenome">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Data Nascimento</label>
+                            <input type="date" class="form-control" name="nasc" id="nasc">
+                        </div>
+
+
+                        <div class="form-check">
+                            <label>Informe seu Sexo</label><br>
+                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" checked>
+                            <label class="form-check-label" for="masculino">
+                             -----Masculino
+                            </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino">
+                            <label class="form-check-label" for="feminino">
+                             -----Feminino
+                            </label>
+                          </div>
+                        <br>
+
+                        <div class="form-group">
+                            <label>CPF</label>
+                            <input type="number" class="form-control" name="cpf" id="cpf">
+                        </div>
+
+                        <div class="form-group">
+                            <label>RG</label>
+                            <input type="number" class="form-control" name="rg" id="rg">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="form-control" name="email" id="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Senha</label>
+                            <input type="password" class="form-control" name="senha" id="senha">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Repetir Senha</label>
+                            <input type="password" class="form-control" name="senha2" id="senha2">
+                        </div>
+                        
+                        <div class="form-group col-md-4 col-md-offset-4">
+                            <button  type="submit"  class="btn btn-dark btn-lg btn-block" id="btn_save">Cadastrar</button>
+                        </div>
+                    </form>  
+                    <a href="../TelaLogin/login.html">
+                        <div class="form-group col-col-md-offset-4">
+                            <button type="submit" class="btn btn-default btn-lg btn-block" id="btn_senha" >Já sou cadastrado</button>
+                        </div>
+                    </a>                                                
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
