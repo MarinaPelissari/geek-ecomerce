@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("test");
     jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
@@ -9,16 +8,9 @@ $(document).ready(function() {
             email: {
                 required: true,
             },
-
-            senha: {
-                required: true,
-                minlength: 6,
-                maxlength: 6
-            }
         },
         messages: {
             email: "Informe o email correto!",
-            senha: "Informe uma senha com 6 caracteres!"
 
         },
     });

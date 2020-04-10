@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Login</title>
+    <title> Mudar Senha</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
@@ -11,22 +11,22 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="esquecisenha.css" />
 
 
 </head>
-<header class  = "flex-wrap">
-    <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center">
+<header>
+    <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center flex-sm-{grow|shrink}-1 ml-3">
         <img id="logo" href="" src="../img/logo.png" />
-
         <h1 id="storeName">GEEK store</h1>
-
-
-        <h1 id="storeName" class = "my-0">GEEK store</h1>
-
     </div>
-    <nav class="navbar my-0">
-        <form class="form-inline justify-content-start flex-nowrap">
+    <!-- <div class="searchbar align-items-center justify-content-around">
+        <input class="search_input border border-secondary rounded" type="text" name="" placeholder="Search..."
+            style="width: 250px; height: 32px;">
+        <img href="" src="../img/loupe-32px.png" />
+    </div> -->
+    <nav class="navbar">
+        <form class="form-inline">
             <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" id="search" list="historico">
             <button class="btn my-2 my-sm-0" type="submit"><img href=""  src="../img/loupe-32px.png" /></button>
 
@@ -63,38 +63,27 @@
         </ul>
     </nav>
     <!--Login-->
-    <script src="login.js"></script> 
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
-            <div class="panel-heading">Login</div>
+            <div class="panel-heading">Informe o Endereço de Email para a recuperação de Senha</div>
             <div class="panel-body">
                 <div class="container col-md-12">
-                    <form method="POST" id="formLogin" action="test.html" >
+                    <form method="POST" id="formLogin" action="../EsqueciSenha/esquecisenha.html" >
                         <div class="form-group">
                             <label>Email</label>
                             <input type="email" class="form-control" name="email" id="email">
                         </div>
                         
-                        <div class="form-group">
-                            <label>Senha</label>
-                            <input type="password" class="form-control" name="senha" id="senha">
-                        </div>
-                        
                         <div class="form-group col-md-4 col-md-offset-4">
-                            <button  type="submit"  class="btn btn-dark btn-lg btn-block" id="btn_save">Entrar</button>
+                            <button  type="submit" class="btn btn-dark btn-lg btn-block" id="btn_change">Enviar</button>
                         </div>
-
                     </form>  
-                     <a href="../EsqueciSenha/esquecisenha.html">
-                        <div class="form-group col-col-md-offset-4">
-                            <button type="submit" class="btn btn-default btn-lg btn-block" id="btn_senha" >Esqueci minha senha?</button>
-                        </div>
-                    </a>                                                 
+                                                                   
                 </div>
             </div>
         </div>
     </div>
-   
+     <script src="esquecisenha.js"></script> 
 </body>
 
 </html>
