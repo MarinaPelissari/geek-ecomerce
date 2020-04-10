@@ -1,0 +1,52 @@
+header div,
+header nav,
+#searchbar {
+    min-width: max-content;
+}
+
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#storeNameContainer {
+    height: 150px;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+}
+
+#storeName {
+    font-size: 4.5rem;
+}
+
+#search {
+    max-width: 227px;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        display: inline-block;
+    }
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+    #storeNameContainer {
+        height: 80px;
+    }
+    #storeName {
+        font-size: 3.5rem;
+    }
+}
