@@ -41,10 +41,8 @@ header {
     justify-content: space-evenly;
 }
 
-
 .btn-link,
 #storeName {
-
     color: #333333;
 }
 
@@ -78,4 +76,8 @@ header {
     .navbar {
         min-height: 40px;
     }
+}
+
+.panel {
+    margin-top: 15%
 }
