@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Canecas</title>
+    <title> Mudar Senha</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
@@ -11,16 +11,16 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
-    <link rel="stylesheet" href="../Canecas/canecas.css" />
+    <link rel="stylesheet" href="esquecisenha.css" />
+
+
 </head>
 <header class="flex-wrap">
     <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center">
         <a href="../TelaInicial/telaInicial.html"><img id="logo" href="" src="../img/logo.png" /></a>
-
         <a href="../TelaInicial/telaInicial.html">
             <h1 id="storeName" class="my-0">GEEK store</h1>
         </a>
-
     </div>
     <nav class="navbar my-0">
         <form class="form-inline justify-content-start flex-nowrap">
@@ -37,9 +37,7 @@
     <div id="rightContainer" class="d-inline-flex align-items-center justify-content-around ml-3 mr-5">
         <a href="../Cadastro/cadastro.html"><button type="button" class="btn btn-link"><h4 class="px-1">Cadastre-se</h4></button></a>
         <h4 class="px-1">|</h4>
-
-        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" ><h4 class="px-1">Login</h4></button></a>
-
+        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" disabled><h4 class="px-1">Login</h4></button></a>
         <a href="../CarrinhoCompras/carrinho.html"><button type="button" class="btn btn-light"><img href="" src="../img/cart.png" /></button></a>
     </div>
 </header>
@@ -57,10 +55,31 @@
                 <a class="nav-link" href="../Acessorios/acess.html">Acessórios</a>
             </li>
             <li class="nav-item">
-                <a id = "activeItem" class="nav-link" href="../Canecas/canecas.html">Canecas</a>
+                <a class="nav-link" href="../Canecas/canecas.html">Canecas</a>
             </li>
         </ul>
     </nav>
+    <!--Login-->
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-success">
+            <div class="panel-heading">Sucesso</div>
+            <div class="panel-body">
+                <div class="container col-md-12">
+                    <form method="POST" >
+                        <div class="form-group">
+                            <label>Você está autenticado! </label>                 
+                        </div>                   
+                    </form>  
+                    <a href="../TelaInicial/telaInicial.html">
+                        <div class="form-group col-col-md-offset-4">
+                            <button type="submit" class="btn btn-dark btn-lg btn-block" id="btn_back" >Ir para o site!</button>
+                        </div>
+                    </a>  
+                                                                   
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

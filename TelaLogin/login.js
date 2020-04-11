@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("test");
+    console.log("test")
     jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
@@ -17,7 +17,7 @@ $(document).ready(function() {
             }
         },
         messages: {
-            email: "Informe o email correto!",
+            email: "Informe um email válido!",
             senha: "Informe uma senha com 6 caracteres!"
 
         },
