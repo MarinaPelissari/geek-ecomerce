@@ -1,3 +1,7 @@
+a:link {
+    text-decoration: none;
+}
+
 header div,
 header nav,
 #searchbar {
@@ -37,6 +41,15 @@ header {
     justify-content: space-evenly;
 }
 
+.btn-link,
+#storeName {
+    color: #333333;
+}
+
+.btn-link:hover {
+    color: #7c7c7d;
+}
+
 @media screen and (max-width: 866px) {
     header {
         justify-content: space-evenly;
@@ -63,8 +76,4 @@ header {
     .navbar {
         min-height: 40px;
     }
-}
-
-a:link {
-    text-decoration: none;
 }
