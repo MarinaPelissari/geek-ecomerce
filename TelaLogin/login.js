@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("test")
+
     jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
@@ -20,6 +20,8 @@ $(document).ready(function() {
             email: "Informe um email válido!",
             senha: "Informe uma senha com 6 caracteres!"
 
-        },
+        }
+
     });
+
 });
