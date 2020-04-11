@@ -41,7 +41,10 @@ header {
     justify-content: space-evenly;
 }
 
-.btn-link, #storeName {
+
+.btn-link,
+#storeName {
+
     color: #333333;
 }
 
@@ -75,8 +78,4 @@ header {
     .navbar {
         min-height: 40px;
     }
-}
-
-a:link {
-    text-decoration: none;
 }
