@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title> Resposta Senha</title>
+    <title>Pagamento</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
@@ -10,17 +10,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script type="text/javascript" src="js/jquery.maskedinput-1.16.0.pack.js"></script>
     <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
-    <link rel="stylesheet" href="esquecisenha.css" />
+    <link rel="stylesheet" href="pag.css" />
 
 
 </head>
 <header class="flex-wrap">
     <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center">
         <a href="../TelaInicial/telaInicial.html"><img id="logo" href="" src="../img/logo.png" /></a>
+
         <a href="../TelaInicial/telaInicial.html">
             <h1 id="storeName" class="my-0">GEEK store</h1>
         </a>
+
     </div>
     <nav class="navbar my-0">
         <form class="form-inline justify-content-start flex-nowrap">
@@ -35,9 +38,11 @@
         </form>
     </nav>
     <div id="rightContainer" class="d-inline-flex align-items-center justify-content-around ml-3 mr-5">
+
         <a href="../Cadastro/cadastro.html"><button type="button" class="btn btn-link"><h4 class="px-1">Cadastre-se</h4></button></a>
         <h4 class="px-1">|</h4>
-        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" ></button><h4 class="px-1">Login</h4></button></a>
+        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" ><h4 class="px-1">Login</h4></button></a>
+
         <a href="../CarrinhoCompras/carrinho.html"><button type="button" class="btn btn-light"><img href="" src="../img/cart.png" /></button></a>
     </div>
 </header>
@@ -59,27 +64,63 @@
             </li>
         </ul>
     </nav>
-    <!--Resposta da Senha-->
+    <!--Pagamento-->
+    <script src="pag.js"></script> 
     <div class="col-md-4 col-md-offset-4">
-        <div class="panel panel-success">
-            <div class="panel-heading">Sucesso</div>
+        <div class="panel panel-default">
+            <div class="panel-heading">Pagamento</div>
             <div class="panel-body">
                 <div class="container col-md-12">
-                    <form method="POST" >
+                    <form method="POST" id="formPag" action="confirPag.html" > 
+                            <div class="form-check">
+                            <label>Informe o tipo de cartão de crédito</label><br>
+                            <input class="form-check-input" type="radio" name="card" id="master" value="Master" checked>
+                            <label class="form-check-label" for="master">
+                             -----Master Card
+                            </label>
+                          </div>
+                          <br>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="card" id="visa" value="Visa">
+                            <label class="form-check-label" for="visa">
+                             -----Visa
+                            </label>
+                          </div>
+                        <br>
+                         <div class="form-group">
+                            <label>Nome do titular</label>
+                            <input type="text" class="form-control" name="nome" id="nome">
+                        </div> 
+
+                         <div class="form-group">
+                            <label>CPF</label>
+                            <input type="number" class="form-control" name="cpf" id="cpf">
+                        </div> 
+
                         <div class="form-group">
-                            <label>Sua senha foi enviada para o seu endereço! </label>                 
-                        </div>                   
-                    </form>  
-                    <a href="../TelaLogin/login.html">
-                        <div class="form-group col-col-md-offset-4">
-                            <button type="submit" class="btn btn-dark btn-lg btn-block" id="btn_back" >Ir para Login</button>
+                            <label>Data de Validade</label>
+                            <input type="date" class="form-control" name="venc" id="venc">
+                        </div> 
+
+                        <div class="form-group">
+                            <label>Número do Cartão</label>
+                            <input type="number" class="form-control" name="ncard" id="ncard">
                         </div>
-                    </a>  
-                                                                   
+
+                        <div class="form-group">
+                            <label>Código de Segurança </label>
+                            <input type="number" class="form-control" name="seg" id="seg">
+                        </div>
+                                                     
+                        <div class="form-group col-col-md-offset-4">
+                            <button  type="submit"  class="btn btn-dark btn-lg btn-block" id="btn_save">Confirmar Pagamento</button>
+                        </div>
+                    </form>                                                                
                 </div>
             </div>
         </div>
     </div>
+   
 </body>
 
 </html>
