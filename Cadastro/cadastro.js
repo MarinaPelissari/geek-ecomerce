@@ -38,6 +38,7 @@ $(document).ready(function() {
                 required: true,
                 minlength: 11,
                 maxlength: 11,
+                cpf: "000.000.000-00"
 
             },
 
@@ -61,4 +62,10 @@ $(document).ready(function() {
 
         },
     });
+
+
+});
+
+$(document).ready(function() {
+    $("#cpf").mask("999.999.999-99");
 });

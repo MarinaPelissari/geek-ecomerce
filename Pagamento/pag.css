@@ -1,0 +1,17 @@
+.error {
+    color: red
+}
+
+.panel {
+    margin-top: 15%
+}
+
+@media screen and (max-width: 991px) {
+    .btn_save {
+        min-width: 100vw;
+    }
+}
+
+#seg {
+    max-width: 20%;
+}
