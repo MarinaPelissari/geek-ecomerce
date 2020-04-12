@@ -19,7 +19,7 @@ header {
     height: 150px;
 }
 
-#logo {
+#storeNameContainer #logo {
     width: 120px;
     height: 120px;
 }
