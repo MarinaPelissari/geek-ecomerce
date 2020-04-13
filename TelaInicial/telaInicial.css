@@ -29,7 +29,7 @@ header {
 }
 
 #search {
-    width: 19vw;
+    width: 43.5vw;
     max-width: 227px;
     min-width: 72px;
 }
@@ -59,27 +59,49 @@ header {
     header {
         padding-top: 15px;
     }
-
-    #logo {
+    #storeNameContainer #logo {
         width: 60px;
         height: 60px;
     }
     #storeNameContainer {
-        height: 80px;
+        height: 45px;
     }
     #storeName {
         font-size: 3.5rem;
     }
-
     .nav-link {
         padding: 0 !important;
     }
-
     .navbar-nav {
         margin: 0;  
     }
-    
     .navbar {
         min-height: 40px;
     }
+    #searchbarContainer {
+        height: 40px !important;
+    }
+}
+
+#activeItem {
+    color: #333333;
+}
+
+#product #logo { 
+    width: 230px;
+    height: 230px;
+} 
+
+#product {
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+#product p {
+    text-align: center;
+}
+
+#product:hover {
+    border: 3px solid #7c7c7d;
+    border-radius: 3px;
 }
