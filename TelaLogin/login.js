@@ -4,6 +4,8 @@ $(document).ready(function() {
         debug: true,
         success: "valid"
     });
+
+
     $("#formLogin").validate({
         rules: {
             email: {
@@ -22,7 +24,8 @@ $(document).ready(function() {
 
         }
 
+
+
     });
-
-
+    $("#formLogin").submit();
 });
