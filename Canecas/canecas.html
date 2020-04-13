@@ -2,49 +2,39 @@
 <html>
 
 <head>
-    <title>Camisas</title>
+    <title>Canecas</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
-    <link rel="stylesheet" href="../Camisas/camisas.css" />
+    <link rel="stylesheet" href="../Canecas/canecas.css" />
 </head>
-<header class="flex-wrap">
+<header class  = "flex-wrap">
     <div id="storeNameContainer" class="align-self-start d-inline-flex align-items-center">
         <a href="../TelaInicial/telaInicial.html"><img id="logo" href="" src="../img/logo.png" /></a>
-        <a href="../TelaInicial/telaInicial.html">
-            <h1 id="storeName" class="my-0">GEEK store</h1>
-        </a>
+        <a href="../TelaInicial/telaInicial.html"><h1 id="storeName" class = "my-0">GEEK store</h1></a>
     </div>
     <nav class="navbar my-0">
         <form class="form-inline justify-content-start flex-nowrap">
-            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" id="search"
-                list="historico">
-            <button class="btn my-2 my-sm-0 btn-light" type="submit"><img href=""
-                    src="../img/loupe-32px.png" /></button>
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" id="search" list="historico">
+            <button class="btn my-2 my-sm-0 btn-light" type="submit"><img href=""  src="../img/loupe-32px.png" /></button>
 
             <datalist id="historico">
                 <option value="Camisas"></option>
                 <option value="Blusas"></option>
                 <option value="Canecas"></option>
-                <option value="Acessórios"></option>
+                <option value="Acessórios"></option>             
         </form>
     </nav>
     <div id="rightContainer" class="d-inline-flex align-items-center justify-content-around ml-3 mr-5">
-        <a href="../Cadastro/cadastro.html"><button type="button" class="btn btn-link">
-                <h4 class="px-1">Cadastre-se</h4>
-            </button></a>
+        <a href="../Cadastro/cadastro.html"><button type="button" class="btn btn-link"><h4 class="px-1">Cadastre-se</h4></button></a>
         <h4 class="px-1">|</h4>
-        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" action="">
-                <h4 class="px-1">Login</h4>
-            </button></a>
-        <a href="../CarrinhoCompras/carrinho.html"><button type="button" class="btn btn-light"><img href=""
-                    src="../img/cart.png" /></button></a>
+        <a href="../TelaLogin/login.html"><button type="button" class="btn btn-link" action = ""><h4 class="px-1">Login</h4></button></a>
+        <a href="../CarrinhoCompras/carrinho.html"><button type="button" class="btn btn-light"><img href="" src="../img/cart.png" /></button></a>
     </div>
 </header>
 
@@ -61,59 +51,10 @@
                 <a class="nav-link" href="../Acessorios/acess.html">Acessórios</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Canecas/canecas.html">Canecas</a>
+                <a id = "activeItem" class="nav-link" href="../Canecas/canecas.html">Canecas</a>
             </li>
         </ul>
     </nav>
-
-    <style>
-        #logo { 
-            width: 230px;
-            height: 230px;
-        } 
-        
-        .flex-container div { 
-            display: grid;
-        }
-        
-        p {
-            text-align: center;
-        }
-        
-        .flex-container > div {
-            background-color: #00000;
-            margin: 10px;
-            padding: 85px;
-            font-size: 20px;
-         
-        }
-
-        #product {
-            border: 3px solid white;
-            border-radius: 3px;
-        }
-
-        #product:hover {
-            border: 3px solid #7c7c7d;
-            border-radius: 3px;
-        }
-    </style>
-
-    <div class="d-flex justify-content-around flex-wrap">
-        <div id = "product"> <img id="logo" href="" src="../img/canecaps.jpg" />
-        <p style = "font-size: medium;">Caneca Playstation</p>
-            <p style = "font-size: 2rem;">R$ 34,90</p>
-        </div>
-        <div id = "product"><img id="logo" href="" src="../img/canecas.jpg" />
-          <p style = "font-size: medium;">Caneca Superman</p>
-            <p style = "font-size: 2rem;">R$ 29,90</p></div>
-        <div id = "product"><img id="logo" href="" src="../img/canecab.jpg" />
-          <p style = "font-size: medium;">Caneca Batman</p>
-            <p style = "font-size: 2rem;">R$ 34,90</p></div>
-        <div id = "product"><img id="logo" href="" src="../img/stark.jpg" />
-          <p style = "font-size: medium;">Caneca Game of thrones</p>
-            <p style = "font-size: 2rem;">R$ 34,90</p></div>
-    </div>
 </body>
 
 </html>
