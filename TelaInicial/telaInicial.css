@@ -99,9 +99,19 @@ header {
 
 #product p {
     text-align: center;
+    color: #333333;
 }
 
 #product:hover {
     border: 3px solid #7c7c7d;
     border-radius: 3px;
+}
+
+#product #name {
+    padding-top: 25px;
+    font-size: medium;
+}
+
+#product #price {
+    font-size: 2rem;
 }
