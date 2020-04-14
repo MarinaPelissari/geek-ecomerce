@@ -13,5 +13,9 @@ $(document).ready(function() {
             email: "Informe o email correto!",
 
         },
+
+        submitHandler: function(form) {
+            form.submit();
+        }
     });
 });

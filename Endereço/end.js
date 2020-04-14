@@ -44,6 +44,9 @@ $(document).ready(function() {
             cid: "Informe sua Cidade!"
 
         },
+        submitHandler: function(form) {
+            form.submit();
+        }
     });
 
 
