@@ -38,5 +38,9 @@ $(document).ready(function() {
             ncard: "Informe o número do cartão!",
             seg: "Informe o código de segurança!"
         },
+
+        submitHandler: function(form) {
+            form.submit();
+        }
     });
 });

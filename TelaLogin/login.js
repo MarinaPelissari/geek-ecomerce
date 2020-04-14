@@ -3,8 +3,8 @@ $(document).ready(function() {
     jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
-    });
 
+    });
 
     $("#formLogin").validate({
         rules: {
@@ -22,10 +22,12 @@ $(document).ready(function() {
             email: "Informe um email válido!",
             senha: "Informe uma senha com 6 caracteres!"
 
+        },
+
+        submitHandler: function(form) {
+            form.submit();
         }
 
-
-
     });
-    $("#formLogin").submit();
+
 });
