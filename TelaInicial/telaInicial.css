@@ -115,3 +115,16 @@ header {
 #product #price {
     font-size: 2rem;
 }
+
+.panel {
+    margin-top: 15%
+}
+
+.tableCarrinho {
+    width: 600px !important;
+}
+
+.tableResumo {
+    width: 300px;
+    margin-top: 70px;
+}
