@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Cadastro</title>
+    <title>Endereço</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" id="bootstrap-css">
@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script type="text/javascript" src="js/jquery.maskedinput-1.16.0.pack.js"></script>
     <link rel="stylesheet" href="../TelaInicial/telaInicial.css" />
-    <link rel="stylesheet" href="cadastro.css" />
+    <link rel="stylesheet" href="end.css" />
 
 
 </head>
@@ -64,80 +64,55 @@
             </li>
         </ul>
     </nav>
-    <!--Cadastro-->
-    <script src="cadastro.js"></script> 
+    <!--Endereço-->
+    <script src="end.js"></script> 
     <div class="col-md-4 col-md-offset-4">
         <div class="panel panel-default">
-            <div class="panel-heading">Cadastro</div>
+            <div class="panel-heading">Confirmação de Endereço</div>
             <div class="panel-body">
                 <div class="container col-md-12">
-                    <form method="POST" id="formCadastro" name="cadastro" action="respcadastro.html" >
+                    <form method="POST" id="formEnd" action="../Pagamento/pag.html" >
                         <div class="form-group">
-                            <label>Nome</label>
-                            <input type="text" class="form-control" name="nome" id="nome">
-                        </div>
 
                         <div class="form-group">
-                            <label>Sobrenome</label>
-                            <input type="text" class="form-control" name="sobrenome" id="sobrenome">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Data Nascimento</label>
-                            <input type="date" class="form-control" name="nasc" id="nasc">
-                        </div>
-
-
-                        <div class="form-check">
-                            <label>Informe seu Sexo</label><br>
-                            <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" checked>
-                            <label class="form-check-label" for="masculino">
-                             -----Masculino
-                            </label>
-                          </div>
-                          <br>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino">
-                            <label class="form-check-label" for="feminino">
-                             -----Feminino
-                            </label>
-                          </div>
-                        <br>
-
-                        <div class="form-group">
-                            <label>CPF</label>
-                            <input type="number" class="form-control" name="cpf" id="cpf">
-                        </div>
-
-                        <div class="form-group">
-                            <label>RG</label>
-                            <input type="number" class="form-control" name="rg" id="rg">
-                        </div>
-
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-control" name="email" id="email">
+                            <label>Bairro</label>
+                            <input type="text" class="form-control" name="bar" id="bar">
                         </div>
                         
                         <div class="form-group">
-                            <label>Senha</label>
-                            <input type="password" class="form-control" name="senha" id="senha">
+                            <label>Endereço</label>
+                            <input type="text" class="form-control" name="end" id="end">
                         </div>
 
                         <div class="form-group">
-                            <label>Repetir Senha</label>
-                            <input type="password" class="form-control" name="senha2" id="senha2">
+                            <label>Número</label>
+                            <input type="number" class="form-control" name="num" id="num">
                         </div>
-                        
-                        <div class="form-group col-md-4 col-md-offset-4">
-                            <button  type="submit"  class="btn btn-dark btn-lg btn-block" id="btn_save">Cadastrar</button>
+
+                        <div class="form-group">
+                            <label>CEP</label>
+                            <input type="number" class="form-control" name="cep" id="cep">
                         </div>
-                    </form>  
-                    <a href="../TelaLogin/login.html">
+
+                        <div class="form-group">
+                            <label>País</label>
+                            <input type="text" class="form-control" name="pais" id="pais">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Estado</label>
+                            <input type="text" class="form-control" name="est" id="est">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Cidade</label>
+                            <input type="text" class="form-control" name="cid" id="cid">
+                        </div>
+                                                                            
                         <div class="form-group col-col-md-offset-4">
-                            <button type="submit" class="btn btn-default btn-lg btn-block" id="btn_senha" >Já sou cadastrado</button>
+                            <button  type="submit"  class="btn btn-dark btn-lg btn-block" id="btn_save">Prosseguir para o Pagamento</button>
                         </div>
-                    </a>                                                
+                    </form>                                                 
                 </div>
             </div>
         </div>

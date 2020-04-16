@@ -1,3 +1,4 @@
+
 a:link {
     text-decoration: none;
 }
@@ -115,3 +116,82 @@ header {
 #product #price {
     font-size: 2rem;
 }
+
+
+#logo {
+    width: 120px;
+    height: 120px;
+}
+
+#storeName {
+    font-size: 4.5rem;
+}
+
+#search {
+    width: 19vw;
+    max-width: 227px;
+    min-width: 72px;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.btn-link,
+#storeName {
+    color: #333333;
+}
+
+.btn-link:hover {
+    color: #7c7c7d;
+}
+
+@media screen and (max-width: 866px) {
+    header {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #logo {
+        width: 60px;
+        height: 60px;
+    }
+    #storeNameContainer {
+        height: 80px;
+    }
+    #storeName {
+        font-size: 3.5rem;
+    }
+    .nav-link {
+        padding: 0 !important;
+    }
+    .navbar-nav {
+        margin: 0;
+    }
+    .navbar {
+        min-height: 40px;
+    }
+}
+
+.panel {
+    margin-top: 15%
+}
+
+.tableCarrinho {
+
+width: 600px !important;
+
+}
+
+.tableResumo {
+
+width: 300px;
+margin-top: 70px;
+
+}
+
+

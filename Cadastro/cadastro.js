@@ -3,7 +3,7 @@ $(document).ready(function() {
         debug: true,
         success: "valid"
     });
-    $("#formLogin").validate({
+    $("#formCadastro").validate({
         rules: {
             email: {
                 required: true,
@@ -39,6 +39,7 @@ $(document).ready(function() {
                 minlength: 11,
                 maxlength: 11,
 
+
             },
 
             rg: {
@@ -55,10 +56,17 @@ $(document).ready(function() {
             sobrenome: "Informe seu sobrenome!",
             nasc: "Informe a data de nascimento!",
             senha: "Informe uma senha válida!",
-            senha2: "As senhas não se corresponde!",
+            senha2: "As senhas não se correspondem!",
             cpf: "Informe um CPF válido!",
             rg: "Informe um RG válido!"
 
         },
+
+        submitHandler: function(form) {
+            form.submit();
+        }
+
     });
+
+
 });

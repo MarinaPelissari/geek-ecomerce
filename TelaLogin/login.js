@@ -1,9 +1,11 @@
 $(document).ready(function() {
-    console.log("test");
+
     jQuery.validator.setDefaults({
         debug: true,
         success: "valid"
+
     });
+
     $("#formLogin").validate({
         rules: {
             email: {
@@ -17,9 +19,15 @@ $(document).ready(function() {
             }
         },
         messages: {
-            email: "Informe o email correto!",
+            email: "Informe um email válido!",
             senha: "Informe uma senha com 6 caracteres!"
 
         },
+
+        submitHandler: function(form) {
+            form.submit();
+        }
+
     });
+
 });
