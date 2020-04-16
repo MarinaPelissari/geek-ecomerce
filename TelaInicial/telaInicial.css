@@ -49,6 +49,12 @@ header {
     color: #7c7c7d;
 }
 
+@media screen and (max-width: 930px) {
+    #onlyProduct {
+        width: 100vw !important; 
+    }
+}
+
 @media screen and (max-width: 866px) {
     header {
         justify-content: space-evenly;
@@ -81,10 +87,54 @@ header {
     #searchbarContainer {
         height: 40px !important;
     }
+
+    #productDetails h5 {
+        font-size: smaller;
+    }
+
+    #buttonsContainer button {
+        font-size: 16px !important;
+    }
 }
 
 #activeItem {
     color: #333333;
+}
+
+#onlyProduct {
+    width: 95vw; 
+    height: 55vh;
+}
+
+#buttonsContainer {
+    width: 95vw; 
+    height: 15vh;
+}
+
+#productDetails {
+    max-width: 500px;
+}
+
+#productDetails h5 {
+    color: #999a9a;
+    font-weight: 300;
+}
+
+#productDetails h4 {
+    border-bottom: 1px solid #999a9a
+}
+
+#productDetails #basicDetails {
+    color: #333333;
+    line-height: 2.5;
+}
+
+#onlyProduct #logo {
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 50px;
 }
 
 #product #logo { 
@@ -127,4 +177,8 @@ header {
 .tableResumo {
     width: 300px;
     margin-top: 70px;
+}
+
+#buttonsContainer button {
+    font-size: large;
 }
