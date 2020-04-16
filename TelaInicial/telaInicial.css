@@ -1,3 +1,4 @@
+
 a:link {
     text-decoration: none;
 }
@@ -18,6 +19,104 @@ header {
 #storeNameContainer {
     height: 150px;
 }
+
+#storeNameContainer #logo {
+    width: 120px;
+    height: 120px;
+}
+
+#storeName {
+    font-size: 4.5rem;
+}
+
+#search {
+    width: 43.5vw;
+    max-width: 227px;
+    min-width: 72px;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.btn-link, #storeName {
+    color: #333333;
+}
+
+.btn-link:hover {
+    color: #7c7c7d;
+}
+
+@media screen and (max-width: 866px) {
+    header {
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        padding-top: 15px;
+    }
+    #storeNameContainer #logo {
+        width: 60px;
+        height: 60px;
+    }
+    #storeNameContainer {
+        height: 45px;
+    }
+    #storeName {
+        font-size: 3.5rem;
+    }
+    .nav-link {
+        padding: 0 !important;
+    }
+    .navbar-nav {
+        margin: 0;  
+    }
+    .navbar {
+        min-height: 40px;
+    }
+    #searchbarContainer {
+        height: 40px !important;
+    }
+}
+
+#activeItem {
+    color: #333333;
+}
+
+#product #logo { 
+    width: 230px;
+    height: 230px;
+} 
+
+#product {
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+#product p {
+    text-align: center;
+    color: #333333;
+}
+
+#product:hover {
+    border: 3px solid #7c7c7d;
+    border-radius: 3px;
+}
+
+#product #name {
+    padding-top: 25px;
+    font-size: medium;
+}
+
+#product #price {
+    font-size: 2rem;
+}
+
 
 #logo {
     width: 120px;
@@ -94,4 +193,5 @@ width: 300px;
 margin-top: 70px;
 
 }
+
 
