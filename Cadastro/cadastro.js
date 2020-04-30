@@ -34,19 +34,20 @@ $(document).ready(function() {
                 equalTo: "#senha",
             },
 
-            cpf: {
+            civil: {
                 required: true,
-                minlength: 11,
-                maxlength: 11,
-
-
             },
 
-            rg: {
+            tel: {
                 required: true,
-                minlength: 9,
-                maxlength: 9,
+                minlength: 10,
+                maxlength: 10
+            },
 
+            cel: {
+                required: true,
+                minlength: 11,
+                maxlength: 11
             }
 
         },
@@ -57,8 +58,9 @@ $(document).ready(function() {
             nasc: "Informe a data de nascimento!",
             senha: "Informe uma senha válida!",
             senha2: "As senhas não se correspondem!",
-            cpf: "Informe um CPF válido!",
-            rg: "Informe um RG válido!"
+            cel: "Informe o celular com DDD",
+            tel: "Informe o telefone com DDD",
+            civil: "Informe o estado Civil"
 
         },
 
